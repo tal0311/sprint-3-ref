@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>css columns</title>
 
   <style>
@@ -14,7 +14,15 @@
         'FILL' 0,
         'wght' 200,
         'GRAD' 0,
-        'opsz' 40
+        'opsz' 20
+    }
+
+    .large {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
     }
 
     .note-list {
@@ -48,7 +56,6 @@
     }
 
 
-
     [data-title] {
       position: relative;
     }
@@ -80,7 +87,7 @@
     <input class="main-input" type="text" />
     <div class="some-content">
       <button data-title="ToolTip content">Video</button>
-      <button>Image</button>
+      <button class="img">Image</button>
       <button>CSV</button>
       <button onclick="setImg()">file</button>
 
@@ -95,7 +102,7 @@
         nisi eum quae id cumque et, quibusdam, excepturi porro mollitia.
         Adipisci, exercitationem?
       </p>
-      <span class="material-symbols-outlined">
+      <span class="material-symbols-outlined large">
         delete
       </span>
       <span class="material-symbols-outlined">
